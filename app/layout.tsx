@@ -1,22 +1,16 @@
 import "./globals.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import { ThemeProvider } from "next-themes";
+import type { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "My Portfolio",
-  description: "Personal Portfolio built with Next.js 15 + Tailwind v4",
+  description: "Personal portfolio built with Next.js + TailwindCSS",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Navbar />
-          <main className="container mx-auto px-6">{children}</main>
-          <Footer />
-        </ThemeProvider>
+    <html lang="en">
+      <body className="bg-white text-gray-900">
+        {children}
       </body>
     </html>
   );
