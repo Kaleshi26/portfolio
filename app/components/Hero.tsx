@@ -1,32 +1,49 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="h-screen flex flex-col justify-center items-center text-center">
-      <motion.h1
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
+    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-12 text-center md:text-left">
+      {/* Animated Profile Image */}
+      <motion.div
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-2xl border-4 border-teal-400"
+      >
+        <Image
+          src="/me.jpg" // 👈 place your photo in /public/me.jpg
+          alt="Kalana Eshan Dharmarathne"
+          fill
+          className="object-cover"
+        />
+      </motion.div>
+
+      {/* Text Info */}
+      <motion.div
+        initial={{ x: 50, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        className="text-5xl font-bold mb-4"
       >
-        Hi, I’m <span className="text-teal-400">Your Name</span>
-      </motion.h1>
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5 }}
-        className="text-lg text-gray-300"
-      >
-        Full-Stack Developer | MERN | Next.js | Tailwind
-      </motion.p>
-      <motion.a
-        href="#projects"
-        whileHover={{ scale: 1.1 }}
-        className="mt-6 px-6 py-3 bg-teal-500 text-white rounded-lg shadow-lg hover:bg-teal-600"
-      >
-        View My Work
-      </motion.a>
+        <h1 className="text-4xl md:text-6xl font-bold text-teal-500">
+          Kalana Eshan Dharmarathne
+        </h1>
+        <p className="mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-300">
+          Full-Stack Developer | MERN & Next.js Enthusiast
+        </p>
+        <div className="mt-6 flex gap-4 justify-center md:justify-start">
+          <a href="mailto:kalanaeshan07@gmail.com" className="hover:text-teal-400">
+            📧 Email
+          </a>
+          <a href="https://www.linkedin.com/in/kalana-dharmarathne-346a48312/" target="_blank" className="hover:text-teal-400">
+            🔗 LinkedIn
+          </a>
+          <a href="https://github.com/Kaleshi26" target="_blank" className="hover:text-teal-400">
+            💻 GitHub
+          </a>
+        </div>
+      </motion.div>
     </section>
   );
 }
