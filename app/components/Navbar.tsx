@@ -3,19 +3,19 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
-  const [active, setActive] = useState<string>("home");
+  const [active, setActive] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
       const sections = ["home", "about", "projects", "contact"];
-      const scrollPos = window.scrollY + 200;
+      const scrollPos = window.scrollY + 150;
 
-      for (let sec of sections) {
+      for (const sec of sections) {
         const el = document.getElementById(sec);
         if (el) {
           const top = el.offsetTop;
           const bottom = top + el.offsetHeight;
-          if (scrollPos >= top && scrollPos <= bottom) {
+          if (scrollPos >= top && scrollPos < bottom) {
             setActive(sec);
           }
         }
@@ -34,20 +34,20 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50 backdrop-blur-md">
       <ul className="flex justify-center gap-8 py-4">
         {navItems.map((item) => (
           <li key={item.id}>
-            <Link
+            <a
               href={`#${item.id}`}
               className={`transition-colors ${
                 active === item.id
-                  ? "text-blue-600 font-semibold"
-                  : "text-gray-700 hover:text-blue-400"
+                  ? "text-teal-500 font-semibold border-b-2 border-teal-500"
+                  : "text-gray-700 hover:text-teal-400"
               }`}
             >
               {item.label}
-            </Link>
+            </a>
           </li>
         ))}
       </ul>
