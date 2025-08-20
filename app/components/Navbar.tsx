@@ -1,32 +1,58 @@
 "use client";
 import Link from "next/link";
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 
-export default function Navbar() {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+const Navbar = () => {
+  const [active, setActive] = useState<string>("home");
 
-  useEffect(() => setMounted(true), []);
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ["home", "about", "projects", "contact"];
+      const scrollPos = window.scrollY + 200;
+
+      for (let sec of sections) {
+        const el = document.getElementById(sec);
+        if (el) {
+          const top = el.offsetTop;
+          const bottom = top + el.offsetHeight;
+          if (scrollPos >= top && scrollPos <= bottom) {
+            setActive(sec);
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const navItems = [
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "projects", label: "Projects" },
+    { id: "contact", label: "Contact" },
+  ];
 
   return (
-    <nav className="flex justify-between items-center py-4 px-6 bg-gray-200 dark:bg-gray-900 shadow-lg sticky top-0 z-50 transition-colors">
-      <h1 className="text-2xl font-bold text-teal-500">MyPortfolio</h1>
-      <div className="flex items-center space-x-6">
-        <Link href="#about" className="hover:text-teal-400">About</Link>
-        <Link href="#projects" className="hover:text-teal-400">Projects</Link>
-        <Link href="#contact" className="hover:text-teal-400">Contact</Link>
-        
-        {/* Dark/Light Mode Toggle */}
-        {mounted && (
-          <button
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="px-3 py-1 rounded-lg border border-gray-400 dark:border-gray-600"
-          >
-            {theme === "dark" ? "🌞" : "🌙"}
-          </button>
-        )}
-      </div>
+    <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+      <ul className="flex justify-center gap-8 py-4">
+        {navItems.map((item) => (
+          <li key={item.id}>
+            <Link
+              href={`#${item.id}`}
+              className={`transition-colors ${
+                active === item.id
+                  ? "text-blue-600 font-semibold"
+                  : "text-gray-700 hover:text-blue-400"
+              }`}
+            >
+              {item.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
     </nav>
   );
-}
+};
+
+export default Navbar;
