@@ -1,4 +1,4 @@
-
+// app/components/GitHubStats.tsx
 export default function GitHubStats() {
   const username = "yourusername"; // replace with your GitHub username
 
