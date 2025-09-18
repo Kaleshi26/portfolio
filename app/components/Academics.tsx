@@ -1,4 +1,4 @@
-
+// app/components/Academics.tsx
 export default function Academics() {
   return (
     <section id="academics" className="py-20 text-center">
