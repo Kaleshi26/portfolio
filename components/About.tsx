@@ -41,13 +41,13 @@ const timelineData = [
 ];
 
 const educationData = {
-  university: "University of Peradeniya",
-  degree: "Bachelor of Science in Computer Science",
+  university: "Sri Lanka Institute of Information Technology (SLIIT)",
+  degree: "BSc (Hons) in Information Technology (Software Engineering)",
   currentYear: "3rd Year",
-  gpa: "3.6",
-  location: "Peradeniya, Sri Lanka",
+  gpa: "3.69",
+  location: "Malabe, Sri Lanka",
   startYear: "2023",
-  expectedGraduation: "2026"
+  expectedGraduation: "Present"
 };
 
 export default function About() {
