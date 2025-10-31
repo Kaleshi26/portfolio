@@ -78,7 +78,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <div className="min-h-screen w-full">
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>
