@@ -37,7 +37,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen animated-bg text-white relative overflow-x-hidden">
+    <div className="min-h-screen animated-bg text-white relative overflow-x-hidden">
       {/* Particle Background */}
       <div className="fixed inset-0 particles pointer-events-none z-0">
         {[...Array(100)].map((_, i) => (
@@ -60,7 +60,7 @@ export default function Home() {
       <Navbar />
 
       {/* Main Content */}
-      <div className="relative z-10">
+      <main className="relative z-10">
         <Hero />
         <About />
         <Skills />
@@ -70,10 +70,10 @@ export default function Home() {
         <Certifications />
         <Academics />
         <Contact />
-      </div>
+      </main>
 
       {/* Footer */}
       <Footer />
-    </main>
+    </div>
   );
 }
