@@ -9,9 +9,9 @@ import { scrollToSection } from "@/lib/utils";
 const navItems = [
   { name: "Home", href: "home" },
   { name: "About", href: "about" },
-  { name: "Education", href: "education" },
   { name: "Skills", href: "skills" },
   { name: "Projects", href: "projects" },
+  { name: "Academics", href: "academics" },
   { name: "Achievements", href: "achievements" },
   { name: "Gallery", href: "gallery" },
   { name: "Certifications", href: "certifications" },
@@ -86,7 +86,7 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-10 flex items-baseline gap-6">
               {navItems.map((item) => (
                 <motion.button
                   key={item.name}
