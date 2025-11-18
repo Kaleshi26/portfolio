@@ -93,7 +93,7 @@ export default function Navbar() {
                   onClick={() => handleNavClick(item.href)}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 relative ${
+                  className={`px-4 py-1.5 rounded-md text-sm font-medium transition-all duration-300 relative ${
                     activeSection === item.href
                       ? "text-cyan-400"
                       : "text-gray-300 hover:text-cyan-400"
@@ -103,7 +103,7 @@ export default function Navbar() {
                   {activeSection === item.href && (
                     <motion.div
                       layoutId="activeSection"
-                      className="absolute inset-0 bg-cyan-500/20 rounded-md -z-10"
+                      className="absolute inset-0 bg-cyan-500/20 rounded-md -z-10 mx-1 my-0.5"
                       initial={false}
                       transition={{ type: "spring", stiffness: 500, damping: 30 }}
                     />

@@ -63,12 +63,12 @@ export default function Gallery() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-16 flex flex-col items-center"
         >
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             <span className="gradient-text">Cricket Gallery</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed text-center">
             Memories from my cricket journey with the Kandy District Team in 2017. 
             These moments shaped my character and taught me valuable lessons about teamwork, 
             discipline, and perseverance that I carry into my programming career.
@@ -82,7 +82,7 @@ export default function Gallery() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16"
         >
-          <div className="glass p-8 rounded-xl text-center">
+          <div className="glass p-8 rounded-xl text-center flex flex-col items-center">
             <div className="w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
               <Trophy className="w-8 h-8 text-white" />
             </div>
@@ -90,7 +90,7 @@ export default function Gallery() {
             <p className="text-gray-400">Year of Achievement</p>
           </div>
           
-          <div className="glass p-8 rounded-xl text-center">
+          <div className="glass p-8 rounded-xl text-center flex flex-col items-center">
             <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
               <Users className="w-8 h-8 text-white" />
             </div>
@@ -98,7 +98,7 @@ export default function Gallery() {
             <p className="text-gray-400">Team Represented</p>
           </div>
           
-          <div className="glass p-8 rounded-xl text-center">
+          <div className="glass p-8 rounded-xl text-center flex flex-col items-center">
             <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
               <Camera className="w-8 h-8 text-white" />
             </div>
@@ -106,6 +106,8 @@ export default function Gallery() {
             <p className="text-gray-400">Memorable Moments</p>
           </div>
         </motion.div>
+
+        <div className="w-full h-12 block" aria-hidden="true"></div>
 
         {/* Gallery Grid */}
         <motion.div
@@ -170,14 +172,16 @@ export default function Gallery() {
           ))}
         </motion.div>
 
+        <div className="w-full h-16 block" aria-hidden="true"></div>
+
         {/* Cricket Journey Story */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-20"
-        >
-          <div className="glass p-12 rounded-2xl max-w-4xl mx-auto">
+        <div className="w-full flex justify-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
+            <div className="glass p-12 rounded-2xl max-w-4xl">
             <h3 className="text-3xl font-bold mb-8 gradient-text text-center">From Cricket to Code</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
@@ -217,6 +221,7 @@ export default function Gallery() {
             </div>
           </div>
         </motion.div>
+        </div>
       </div>
 
       {/* Lightbox Modal */}

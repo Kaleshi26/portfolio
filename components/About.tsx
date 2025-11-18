@@ -25,7 +25,7 @@ const timelineData = [
   {
     year: "2023",
     title: "University Journey Begins",
-    description: "Joined University of Peradeniya and chose IT specialization, marking the beginning of my formal computer science education.",
+    description: "Joined Sri Lanka Institute of Information Technology(SLIIT) and chose software engineering specialization, marking the beginning of my formal computer science education.",
     icon: GraduationCap,
     color: "text-green-500",
     bgColor: "bg-green-500/10"
@@ -63,12 +63,12 @@ export default function About() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-16 flex flex-col items-center"
         >
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             <span className="gradient-text">About Me</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed w-full !text-center">
             From cricket fields to code repositories, my journey has been about passion, 
             dedication, and continuous learning. Here's my story of transformation and growth.
           </p>
@@ -92,8 +92,7 @@ export default function About() {
                 </p>
                 <p>
                   After completing my A/Ls in the Physical Science stream, I was drawn to the logical thinking and 
-                  problem-solving aspects of mathematics and physics. This naturally led me to choose Information 
-                  Technology as my specialization at the University of Peradeniya.
+                  problem-solving aspects of mathematics and physics. This naturally led me to choose software engineering as my specialization at SLIIT.
                 </p>
                 <p>
                   Today, I'm a passionate full-stack developer who loves building innovative web applications. 
@@ -116,7 +115,7 @@ export default function About() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white">Current Education</h3>
-                  <p className="text-gray-400">University of Peradeniya</p>
+                  <p className="text-gray-400">Sri Lanka Institute of Information Technology</p>
                 </div>
               </div>
               
@@ -179,31 +178,34 @@ export default function About() {
           </motion.div>
         </div>
 
+        <div className="w-full h-16 block" aria-hidden="true"></div>
+
         {/* Why IT Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-20 text-center"
-        >
-          <div className="glass p-12 rounded-2xl max-w-4xl mx-auto">
+        <div className="w-full flex justify-center">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="text-center"
+          >
+            <div className="glass p-12 rounded-2xl max-w-4xl">
             <h3 className="text-3xl font-bold mb-8 gradient-text">Why I Chose IT</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center">
+              <div className="text-center flex flex-col items-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🧩</span>
                 </div>
                 <h4 className="text-xl font-semibold text-white mb-2">Problem Solving</h4>
                 <p className="text-gray-400">I love breaking down complex problems into manageable solutions, just like strategizing in cricket.</p>
               </div>
-              <div className="text-center">
+              <div className="text-center flex flex-col items-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🚀</span>
                 </div>
                 <h4 className="text-xl font-semibold text-white mb-2">Innovation</h4>
                 <p className="text-gray-400">Technology allows me to create solutions that can impact millions of people worldwide.</p>
               </div>
-              <div className="text-center">
+              <div className="text-center flex flex-col items-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">📈</span>
                 </div>
@@ -213,6 +215,7 @@ export default function About() {
             </div>
           </div>
         </motion.div>
+        </div>
       </div>
     </section>
   );

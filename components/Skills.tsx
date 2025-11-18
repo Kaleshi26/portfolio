@@ -81,12 +81,12 @@ export default function Skills() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-16 flex flex-col items-center"
         >
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             <span className="gradient-text">Skills & Expertise</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed text-center">
             A comprehensive toolkit of technologies and frameworks I use to build 
             modern, scalable, and efficient web applications.
           </p>
@@ -97,7 +97,7 @@ export default function Skills() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex flex-wrap justify-center gap-4 mb-12"
+          className="flex flex-wrap justify-center gap-4"
         >
           {skillCategories.map((category) => (
             <motion.button
@@ -116,6 +116,8 @@ export default function Skills() {
             </motion.button>
           ))}
         </motion.div>
+
+        <div className="w-full h-12 block" aria-hidden="true"></div>
 
         {/* Skills Grid */}
         <motion.div
@@ -194,12 +196,14 @@ export default function Skills() {
           })}
         </motion.div>
 
+        <div className="w-full h-16 block" aria-hidden="true"></div>
+
         {/* Skills Summary */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8"
         >
           <div className="glass p-8 rounded-xl text-center">
             <div className="text-4xl font-bold gradient-text mb-2">
@@ -223,14 +227,17 @@ export default function Skills() {
           </div>
         </motion.div>
 
+        <div className="w-full h-32 block" aria-hidden="true"></div>
+
         {/* Learning Philosophy */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.8, delay: 1 }}
-          className="mt-16 text-center"
-        >
-          <div className="glass p-12 rounded-2xl max-w-4xl mx-auto">
+        <div className="w-full flex justify-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+            transition={{ duration: 0.8, delay: 1 }}
+            className="text-center"
+          >
+            <div className="glass p-12 rounded-2xl max-w-4xl">
             <h3 className="text-3xl font-bold mb-8 gradient-text">Learning Philosophy</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="flex items-start gap-4">
@@ -264,6 +271,7 @@ export default function Skills() {
             </div>
           </div>
         </motion.div>
+        </div>
       </div>
     </section>
   );
