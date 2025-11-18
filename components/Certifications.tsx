@@ -195,13 +195,14 @@ export default function Certifications() {
         </motion.div>
 
         {/* Learning Journey */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="text-center"
-        >
-          <div className="glass p-12 rounded-2xl max-w-4xl mx-auto">
+        <div className="w-full flex justify-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="text-center"
+          >
+            <div className="glass p-12 rounded-2xl max-w-4xl">
             <h3 className="text-3xl font-bold mb-8 gradient-text">My Learning Journey</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="text-center">
@@ -235,15 +236,16 @@ export default function Certifications() {
             </div>
           </div>
         </motion.div>
+        </div>
 
         {/* Upcoming Certifications */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.8, delay: 1 }}
-          className="mt-16"
-        >
-          <div className="glass p-8 rounded-xl max-w-2xl mx-auto text-center">
+        <div className="w-full flex justify-center mt-16">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+            transition={{ duration: 0.8, delay: 1 }}
+          >
+            <div className="glass p-8 rounded-xl max-w-2xl text-center">
             <h3 className="text-2xl font-bold mb-4 text-cyan-400">What's Next?</h3>
             <p className="text-gray-400 mb-6">
               I'm currently working towards additional certifications in cloud computing, 
@@ -262,6 +264,7 @@ export default function Certifications() {
             </div>
           </div>
         </motion.div>
+        </div>
       </div>
     </section>
   );

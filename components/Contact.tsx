@@ -345,13 +345,14 @@ export default function Contact() {
         </div>
 
         {/* Call to Action */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="mt-20 text-center"
-        >
-          <div className="glass p-12 rounded-2xl max-w-4xl mx-auto">
+        <div className="w-full flex justify-center mt-20">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="text-center"
+          >
+            <div className="glass p-12 rounded-2xl max-w-4xl">
             <h3 className="text-3xl font-bold mb-6 gradient-text">Ready to Start Something Amazing?</h3>
             <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
               Whether you have a project in mind, want to collaborate, or just want to chat about technology, 
@@ -381,6 +382,7 @@ export default function Contact() {
             </div>
           </div>
         </motion.div>
+        </div>
       </div>
     </section>
   );

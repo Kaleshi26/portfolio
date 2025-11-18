@@ -224,13 +224,14 @@ export default function Skills() {
         </motion.div>
 
         {/* Learning Philosophy */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.8, delay: 1 }}
-          className="mt-16 text-center"
-        >
-          <div className="glass p-12 rounded-2xl max-w-4xl mx-auto">
+        <div className="w-full flex justify-center mt-16">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+            transition={{ duration: 0.8, delay: 1 }}
+            className="text-center"
+          >
+            <div className="glass p-12 rounded-2xl max-w-4xl">
             <h3 className="text-3xl font-bold mb-8 gradient-text">Learning Philosophy</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="flex items-start gap-4">
@@ -264,6 +265,7 @@ export default function Skills() {
             </div>
           </div>
         </motion.div>
+        </div>
       </div>
     </section>
   );
