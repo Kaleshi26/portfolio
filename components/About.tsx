@@ -25,7 +25,7 @@ const timelineData = [
   {
     year: "2023",
     title: "University Journey Begins",
-    description: "Joined University of Peradeniya and chose IT specialization, marking the beginning of my formal computer science education.",
+    description: "Joined Sri Lanka Institute of Information Technology(SLIIT) and chose software engineering specialization, marking the beginning of my formal computer science education.",
     icon: GraduationCap,
     color: "text-green-500",
     bgColor: "bg-green-500/10"
@@ -92,8 +92,7 @@ export default function About() {
                 </p>
                 <p>
                   After completing my A/Ls in the Physical Science stream, I was drawn to the logical thinking and 
-                  problem-solving aspects of mathematics and physics. This naturally led me to choose Information 
-                  Technology as my specialization at the University of Peradeniya.
+                  problem-solving aspects of mathematics and physics. This naturally led me to choose software engineering as my specialization at SLIIT.
                 </p>
                 <p>
                   Today, I'm a passionate full-stack developer who loves building innovative web applications. 
@@ -116,7 +115,7 @@ export default function About() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-white">Current Education</h3>
-                  <p className="text-gray-400">University of Peradeniya</p>
+                  <p className="text-gray-400">Sri Lanka Institute of Information Technology</p>
                 </div>
               </div>
               

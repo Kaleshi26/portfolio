@@ -8,7 +8,7 @@ import { scrollToSection } from "@/lib/utils";
 
 const typingTexts = [
   "Full Stack Developer",
-  "CS Undergraduate",
+  "SE Undergraduate",
   "Problem Solver",
   "Tech Enthusiast",
   "Cricket Player"
@@ -144,7 +144,7 @@ export default function Hero() {
               className="text-lg text-gray-400 mb-8 max-w-2xl leading-relaxed"
             >
               Passionate about building innovative web applications and solving complex problems. 
-              Currently pursuing Computer Science at University of Peradeniya, with a strong foundation 
+              Currently pursuing software engineering at Sri Lanka Institute of Information Technology(SLIIT), with a strong foundation 
               in both frontend and backend technologies.
             </motion.p>
 
