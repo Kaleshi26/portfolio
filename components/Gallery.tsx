@@ -9,16 +9,16 @@ import { X, ChevronLeft, ChevronRight, Camera, Users, Trophy } from "lucide-reac
 const galleryImages = [
   {
     id: 1,
-    src: "/gallery/cricket-team-2017.svg",
-    alt: "Kandy District Cricket Team 2017",
-    title: "Kandy District Cricket Team",
-    description: "Group photo with the Kandy District Cricket Team in 2017. A memorable year representing our district with pride and dedication.",
+    src: "/gallery/team.JPG",
+    alt: "School Cricket Team 2017",
+    title: "School Cricket Team",
+    description: "Group photo with the School Cricket Team in 2017. A memorable year representing our district with pride and dedication.",
     year: "2017",
     type: "team"
   },
   {
     id: 2,
-    src: "/gallery/cricket-individual-2017.svg",
+    src: "/gallery/individual.JPEG",
     alt: "Individual cricket photo 2017",
     title: "Individual Cricket Photo",
     description: "Personal moment during practice session, showcasing the dedication and passion for the sport that taught me valuable life lessons.",
