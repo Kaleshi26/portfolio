@@ -36,12 +36,12 @@ export default function Projects() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-16 flex flex-col items-center"
         >
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             <span className="gradient-text">Featured Projects</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed text-center">
             A showcase of my work spanning university assignments, personal projects, 
             and hackathon creations. Each project represents a unique challenge and learning opportunity.
           </p>

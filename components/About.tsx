@@ -63,12 +63,12 @@ export default function About() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-16 flex flex-col items-center"
         >
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             <span className="gradient-text">About Me</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed w-full !text-center">
             From cricket fields to code repositories, my journey has been about passion, 
             dedication, and continuous learning. Here's my story of transformation and growth.
           </p>
@@ -192,21 +192,21 @@ export default function About() {
             <div className="glass p-12 rounded-2xl max-w-4xl">
             <h3 className="text-3xl font-bold mb-8 gradient-text">Why I Chose IT</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center">
+              <div className="text-center flex flex-col items-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🧩</span>
                 </div>
                 <h4 className="text-xl font-semibold text-white mb-2">Problem Solving</h4>
                 <p className="text-gray-400">I love breaking down complex problems into manageable solutions, just like strategizing in cricket.</p>
               </div>
-              <div className="text-center">
+              <div className="text-center flex flex-col items-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🚀</span>
                 </div>
                 <h4 className="text-xl font-semibold text-white mb-2">Innovation</h4>
                 <p className="text-gray-400">Technology allows me to create solutions that can impact millions of people worldwide.</p>
               </div>
-              <div className="text-center">
+              <div className="text-center flex flex-col items-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">📈</span>
                 </div>

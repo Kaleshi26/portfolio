@@ -58,12 +58,12 @@ export default function Academics() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-16 flex flex-col items-center"
         >
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             <span className="gradient-text">Academic Performance</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed text-center">
             My academic journey at the University of Peradeniya, showcasing consistent performance 
             and dedication to excellence in Computer Science education.
           </p>
@@ -76,7 +76,7 @@ export default function Academics() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16"
         >
-          <div className="glass p-8 rounded-xl text-center">
+          <div className="glass p-8 rounded-xl text-center flex flex-col items-center">
             <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
               <GraduationCap className="w-8 h-8 text-white" />
             </div>
@@ -86,7 +86,7 @@ export default function Academics() {
             <p className="text-gray-400">Current Year</p>
           </div>
           
-          <div className="glass p-8 rounded-xl text-center">
+          <div className="glass p-8 rounded-xl text-center flex flex-col items-center">
             <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
               <Award className="w-8 h-8 text-white" />
             </div>
@@ -96,7 +96,7 @@ export default function Academics() {
             <p className="text-gray-400">Overall GPA</p>
           </div>
           
-          <div className="glass p-8 rounded-xl text-center">
+          <div className="glass p-8 rounded-xl text-center flex flex-col items-center">
             <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
               <BookOpen className="w-8 h-8 text-white" />
             </div>
@@ -106,7 +106,7 @@ export default function Academics() {
             <p className="text-gray-400">Modules Completed</p>
           </div>
           
-          <div className="glass p-8 rounded-xl text-center">
+          <div className="glass p-8 rounded-xl text-center flex flex-col items-center">
             <div className="w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
               <TrendingUp className="w-8 h-8 text-white" />
             </div>
@@ -117,12 +117,14 @@ export default function Academics() {
           </div>
         </motion.div>
 
+        <div className="w-full h-12 block" aria-hidden="true"></div>
+
         {/* Year Selection */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="flex flex-wrap justify-center gap-4 mb-12"
+          className="flex flex-wrap justify-center gap-4"
         >
           {academicData.map((year) => (
             <motion.button
@@ -140,6 +142,8 @@ export default function Academics() {
             </motion.button>
           ))}
         </motion.div>
+
+        <div className="w-full h-16" aria-hidden="true"></div>
 
         {/* Selected Year Details */}
         <motion.div
@@ -345,28 +349,28 @@ export default function Academics() {
             <div className="glass p-12 rounded-2xl max-w-4xl">
             <h3 className="text-3xl font-bold mb-8 gradient-text">My Academic Philosophy</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="text-center">
+              <div className="text-center flex flex-col items-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🧠</span>
                 </div>
                 <h4 className="text-xl font-semibold text-white mb-2">Deep Understanding</h4>
                 <p className="text-gray-400">I focus on understanding concepts deeply rather than memorizing, ensuring long-term retention and practical application.</p>
               </div>
-              <div className="text-center">
+              <div className="text-center flex flex-col items-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🔄</span>
                 </div>
                 <h4 className="text-xl font-semibold text-white mb-2">Continuous Learning</h4>
                 <p className="text-gray-400">Learning doesn't stop at the classroom. I actively seek additional resources and stay updated with industry trends.</p>
               </div>
-              <div className="text-center">
+              <div className="text-center flex flex-col items-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🤝</span>
                 </div>
                 <h4 className="text-xl font-semibold text-white mb-2">Collaborative Learning</h4>
                 <p className="text-gray-400">I believe in learning with and from peers, sharing knowledge, and building a supportive academic community.</p>
               </div>
-              <div className="text-center">
+              <div className="text-center flex flex-col items-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🎯</span>
                 </div>

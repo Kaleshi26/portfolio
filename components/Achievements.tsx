@@ -31,12 +31,12 @@ export default function Achievements() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-16 flex flex-col items-center"
         >
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             <span className="gradient-text">Achievements & Recognition</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed text-center">
             Celebrating milestones in my journey, from open source contributions to academic excellence 
             and sports achievements. Each badge represents dedication, learning, and growth.
           </p>
@@ -59,14 +59,16 @@ export default function Achievements() {
                 <Star className="w-8 h-8 text-white" />
               </div>
             </div>
-            <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-              Successfully completed Hacktoberfest 2025, contributing to open source projects 
-              and earning recognition for my contributions to the developer community.
-            </p>
+            <div className="w-full flex justify-center">
+              <p className="text-lg text-gray-400 max-w-2xl text-center">
+                Successfully completed Hacktoberfest 2025, contributing to open source projects 
+                and earning recognition for my contributions to the developer community.
+              </p>
+            </div>
           </div>
 
           {/* Badges Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-y-6 gap-x-6">
             {hacktoberfestBadges.map((badge, index) => (
               <motion.div
                 key={badge.id}
@@ -74,9 +76,9 @@ export default function Achievements() {
                 animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
                 transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
                 whileHover={{ scale: 1.1, y: -5 }}
-                className="group cursor-pointer"
+                className="group cursor-pointer min-w-0"
               >
-                <div className="glass p-4 rounded-xl hover:glow-cyan transition-all duration-300 text-center">
+                <div className="glass p-4 rounded-xl hover:glow-cyan transition-all duration-300 text-center h-full">
                   <div className="relative w-24 h-24 mx-auto mb-3">
                     <Image
                       src={badge.image}
@@ -234,28 +236,28 @@ export default function Achievements() {
             <div className="glass p-12 rounded-2xl max-w-4xl">
             <h3 className="text-3xl font-bold mb-8 gradient-text">My Achievement Philosophy</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="text-center">
+              <div className="text-center flex flex-col items-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🎯</span>
                 </div>
                 <h4 className="text-xl font-semibold text-white mb-2">Goal-Oriented</h4>
                 <p className="text-gray-400">Every achievement starts with a clear goal and a plan to reach it.</p>
               </div>
-              <div className="text-center">
+              <div className="text-center flex flex-col items-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🚀</span>
                 </div>
                 <h4 className="text-xl font-semibold text-white mb-2">Continuous Growth</h4>
                 <p className="text-gray-400">I believe in constant learning and pushing beyond comfort zones.</p>
               </div>
-              <div className="text-center">
+              <div className="text-center flex flex-col items-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🤝</span>
                 </div>
                 <h4 className="text-xl font-semibold text-white mb-2">Community Impact</h4>
                 <p className="text-gray-400">The best achievements are those that help others grow too.</p>
               </div>
-              <div className="text-center">
+              <div className="text-center flex flex-col items-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">💪</span>
                 </div>

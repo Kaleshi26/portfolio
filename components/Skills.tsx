@@ -81,12 +81,12 @@ export default function Skills() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-16 flex flex-col items-center"
         >
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             <span className="gradient-text">Skills & Expertise</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed text-center">
             A comprehensive toolkit of technologies and frameworks I use to build 
             modern, scalable, and efficient web applications.
           </p>

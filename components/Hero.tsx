@@ -127,10 +127,10 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-2xl lg:text-3xl font-semibold mb-8 h-12 flex items-center justify-center lg:justify-start"
+              className="text-2xl lg:text-3xl font-semibold mb-8 h-12 flex flex-row items-baseline gap-2 justify-center lg:justify-start"
             >
-              <span className="text-gray-300">I'm a </span>
-              <span className="text-cyan-400 ml-2 min-h-[1.5em]">
+              <span className="text-gray-300">I'm a</span>
+              <span className="text-cyan-400 min-h-[1.5em]">
                 {currentText}
                 <span className="animate-pulse">|</span>
               </span>
