@@ -226,6 +226,8 @@ export default function Academics() {
           </div>
         </motion.div>
 
+        <div className="w-full h-16 block" aria-hidden="true"></div>
+
         {/* Performance Analysis */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -329,6 +331,8 @@ export default function Academics() {
             </div>
           </div>
         </motion.div>
+
+        <div className="w-full h-16 block" aria-hidden="true"></div>
 
         {/* Academic Philosophy */}
         <div className="w-full flex justify-center">

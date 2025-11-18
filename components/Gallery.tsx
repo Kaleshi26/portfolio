@@ -107,6 +107,8 @@ export default function Gallery() {
           </div>
         </motion.div>
 
+        <div className="w-full h-12 block" aria-hidden="true"></div>
+
         {/* Gallery Grid */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -170,8 +172,10 @@ export default function Gallery() {
           ))}
         </motion.div>
 
+        <div className="w-full h-16 block" aria-hidden="true"></div>
+
         {/* Cricket Journey Story */}
-        <div className="w-full flex justify-center mt-20">
+        <div className="w-full flex justify-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}

@@ -179,8 +179,10 @@ export default function About() {
           </motion.div>
         </div>
 
+        <div className="w-full h-16 block" aria-hidden="true"></div>
+
         {/* Why IT Section */}
-        <div className="w-full flex justify-center mt-20">
+        <div className="w-full flex justify-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}

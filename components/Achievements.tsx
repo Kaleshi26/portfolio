@@ -96,12 +96,14 @@ export default function Achievements() {
             ))}
           </div>
 
+          <div className="w-full h-16 block" aria-hidden="true"></div>
+
           {/* Hacktoberfest Stats */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8"
+            className="grid grid-cols-1 md:grid-cols-3 gap-8"
           >
             <div className="glass p-6 rounded-xl text-center">
               <div className="text-3xl font-bold gradient-text mb-2">
@@ -218,6 +220,8 @@ export default function Achievements() {
             </motion.div>
           </div>
         </motion.div>
+
+        <div className="w-full h-32 block" aria-hidden="true"></div>
 
         {/* Achievement Philosophy */}
         <div className="w-full flex justify-center">
