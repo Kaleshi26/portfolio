@@ -158,8 +158,8 @@ export default function Achievements() {
                 </div>
               </div>
               <p className="text-gray-300 leading-relaxed">
-                Recognized for outstanding academic performance in Computer Science program 
-                at University of Peradeniya, maintaining a GPA of 3.6+.
+                Recognized for outstanding academic performance in software engineering program 
+                at Sri Lanka Institute of Information Technology(SLIIT), maintaining a GPA of 3.6+.
               </p>
               <div className="mt-4 flex items-center gap-2 text-sm text-cyan-400">
                 <Calendar className="w-4 h-4" />
