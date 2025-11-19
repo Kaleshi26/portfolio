@@ -89,11 +89,11 @@ export const projects: Project[] = [
     title: 'CampEase – Camping Gear Rental (MERN)',
     description: 'End-to-end rental platform with role-based dashboards, payments, and notifications.',
     longDescription: 'CampEase is a full-stack MERN application for managing camping gear rentals. Customers can browse, reserve, and pay; admins and staff manage users, inventory, reservations, finance, and marketing. Includes secure payments and email/SMS notifications.',
-    image: '/projects/mern.svg',
+    image: '/projects/campE.PNG',
     techStack: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Tailwind CSS'],
     githubUrl: 'https://github.com/Kaleshi26/Camping-Gear-Rental',
     liveUrl: '',
-    category: 'personal',
+    category: 'university',
     featured: true
   },
   {
