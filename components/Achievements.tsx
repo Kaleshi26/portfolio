@@ -10,7 +10,6 @@ import {
   Star, 
   Award, 
   Calendar,
-  ExternalLink,
   Github,
   Heart
 } from "lucide-react";
@@ -20,7 +19,6 @@ export default function Achievements() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const hacktoberfestBadges = achievements.filter(achievement => achievement.category === 'hacktoberfest');
-  const otherAchievements = achievements.filter(achievement => achievement.category !== 'hacktoberfest');
 
   return (
     <section id="achievements" className="py-20 relative">
@@ -153,7 +151,7 @@ export default function Achievements() {
                   <Award className="w-8 h-8 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-white">Dean's List</h4>
+                  <h4 className="text-xl font-bold text-white">Dean&apos;s List</h4>
                   <p className="text-gray-400">Academic Excellence</p>
                 </div>
               </div>
