@@ -9,7 +9,7 @@ import { X, ChevronLeft, ChevronRight, Camera, Users, Trophy } from "lucide-reac
 const galleryImages = [
   {
     id: 1,
-    src: "/gallery/team.JPG",
+    src: "/gallery/team.jpg",
     alt: "School Cricket Team 2017",
     title: "School Cricket Team",
     description: "Group photo with the School Cricket Team in 2017. A memorable year representing our district with pride and dedication.",
