@@ -18,7 +18,7 @@ const galleryImages = [
   },
   {
     id: 2,
-    src: "/gallery/individual.JPEG",
+    src: "/gallery/individual.jpeg",
     alt: "Individual cricket photo 2017",
     title: "Individual Cricket Photo",
     description: "Personal moment during practice session, showcasing the dedication and passion for the sport that taught me valuable life lessons.",
