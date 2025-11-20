@@ -101,7 +101,7 @@ export const projects: Project[] = [
     title: 'SmartSpendy – Android Finance Tracker (Kotlin)',
     description: 'Offline-first expense tracker with budgeting, categories, and local backup/restore.',
     longDescription: 'Native Android app built with Kotlin. Users manage income/expenses, set monthly budgets with notifications, categorize spending, and back up/restore data via JSON or text files using SharedPreferences and internal storage.',
-    image: '/projects/android.svg',
+    image: '/projects/finan.png',
     techStack: ['Kotlin', 'Android Studio', 'SharedPreferences', 'Notifications'],
     githubUrl: 'https://github.com/Kaleshi26/SmartSpendy_App',
     liveUrl: '',
