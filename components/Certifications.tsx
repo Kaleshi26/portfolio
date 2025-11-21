@@ -3,15 +3,12 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import Image from "next/image";
 import { certifications } from "@/data/certifications";
 import { 
   Award, 
   ExternalLink, 
   Calendar,
-  Building,
-  CheckCircle,
-  Star
+  Building
 } from "lucide-react";
 
 export default function Certifications() {
@@ -221,7 +218,7 @@ export default function Certifications() {
                   <span className="text-2xl">🚀</span>
                 </div>
                 <h4 className="text-xl font-semibold text-white mb-2">Continuous Growth</h4>
-                <p className="text-gray-400">Technology evolves rapidly, and I'm committed to staying updated with the latest trends and best practices.</p>
+                <p className="text-gray-400">Technology evolves rapidly, and I&apos;m committed to staying updated with the latest trends and best practices.</p>
               </div>
               <div className="text-center flex flex-col items-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -252,9 +249,9 @@ export default function Certifications() {
             transition={{ duration: 0.8, delay: 1 }}
           >
             <div className="glass p-8 rounded-xl max-w-2xl text-center">
-            <h3 className="text-2xl font-bold mb-4 text-cyan-400">What's Next?</h3>
+            <h3 className="text-2xl font-bold mb-4 text-cyan-400">What&apos;s Next?</h3>
             <p className="text-gray-400 mb-6">
-              I'm currently working towards additional certifications in cloud computing, 
+              I&apos;m currently working towards additional certifications in cloud computing, 
               machine learning, and advanced web development technologies.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
