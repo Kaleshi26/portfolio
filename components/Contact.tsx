@@ -11,7 +11,6 @@ import {
   Github,
   Linkedin,
   Twitter,
-  MessageCircle,
   CheckCircle,
   AlertCircle
 } from "lucide-react";
@@ -117,7 +116,7 @@ export default function Contact() {
             <span className="gradient-text">Get In Touch</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed text-center">
-            Ready to collaborate on your next project? I'm always excited to discuss new opportunities, 
+            Ready to collaborate on your next project? I&apos;m always excited to discuss new opportunities, 
             share ideas, or just have a chat about technology and innovation.
           </p>
         </motion.div>
@@ -131,9 +130,9 @@ export default function Contact() {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-bold text-white mb-6">Let's Connect</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Let&apos;s Connect</h3>
               <p className="text-gray-400 mb-8 leading-relaxed">
-                I'm always interested in hearing about new opportunities, innovative projects, 
+                I&apos;m always interested in hearing about new opportunities, innovative projects, 
                 or just connecting with fellow developers and tech enthusiasts. Feel free to 
                 reach out through any of the channels below!
               </p>
@@ -203,8 +202,8 @@ export default function Contact() {
                 <h4 className="text-white font-semibold">Currently Available</h4>
               </div>
               <p className="text-gray-400 text-sm">
-                I'm open to new opportunities, collaborations, and interesting projects. 
-                Let's discuss how we can work together!
+                I&apos;m open to new opportunities, collaborations, and interesting projects. 
+                Let&apos;s discuss how we can work together!
               </p>
             </motion.div>
           </motion.div>
@@ -325,7 +324,7 @@ export default function Contact() {
                 className="mt-4 p-4 bg-green-500/20 border border-green-500/30 rounded-lg"
               >
                 <p className="text-green-400 text-sm">
-                  Thank you for your message! I'll get back to you as soon as possible.
+                  Thank you for your message! I&apos;ll get back to you as soon as possible.
                 </p>
               </motion.div>
             )}
@@ -358,7 +357,7 @@ export default function Contact() {
             <h3 className="text-3xl font-bold mb-6 gradient-text">Ready to Start Something Amazing?</h3>
             <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
               Whether you have a project in mind, want to collaborate, or just want to chat about technology, 
-              I'd love to hear from you. Let's create something incredible together!
+              I&apos;d love to hear from you. Let&apos;s create something incredible together!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.a

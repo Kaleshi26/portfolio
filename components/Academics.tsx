@@ -9,7 +9,6 @@ import {
   BookOpen, 
   TrendingUp,
   Award,
-  Calendar,
   BarChart3,
   Target,
   Star
@@ -361,7 +360,7 @@ export default function Academics() {
                   <span className="text-2xl">🔄</span>
                 </div>
                 <h4 className="text-xl font-semibold text-white mb-2">Continuous Learning</h4>
-                <p className="text-gray-400">Learning doesn't stop at the classroom. I actively seek additional resources and stay updated with industry trends.</p>
+                <p className="text-gray-400">Learning doesn&apos;t stop at the classroom. I actively seek additional resources and stay updated with industry trends.</p>
               </div>
               <div className="text-center flex flex-col items-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">

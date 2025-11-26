@@ -10,16 +10,16 @@ import {
   Github, 
   X, 
   Calendar,
-  Tag,
-  Eye,
   Code2
 } from "lucide-react";
+
+type FilterCategory = 'all' | 'university' | 'personal' | 'hackathon';
 
 export default function Projects() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
-  const [activeFilter, setActiveFilter] = useState<'all' | 'university' | 'personal' | 'hackathon'>('all');
+  const [activeFilter, setActiveFilter] = useState<FilterCategory>('all');
 
   const filteredProjects = activeFilter === 'all' 
     ? projects 
@@ -64,7 +64,7 @@ export default function Projects() {
               key={filter.id}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => setActiveFilter(filter.id as any)}
+              onClick={() => setActiveFilter(filter.id as FilterCategory)}
               className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
                 activeFilter === filter.id
                   ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-lg'

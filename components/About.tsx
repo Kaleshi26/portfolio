@@ -70,7 +70,7 @@ export default function About() {
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed w-full !text-center">
             From cricket fields to code repositories, my journey has been about passion, 
-            dedication, and continuous learning. Here's my story of transformation and growth.
+            dedication, and continuous learning. Here&apos;s my story of transformation and growth.
           </p>
         </motion.div>
 
@@ -95,7 +95,7 @@ export default function About() {
                   problem-solving aspects of mathematics and physics. This naturally led me to choose software engineering as my specialization at SLIIT.
                 </p>
                 <p>
-                  Today, I'm a passionate full-stack developer who loves building innovative web applications. 
+                  Today, I&apos;m a passionate full-stack developer who loves building innovative web applications. 
                   My background in physical sciences gives me a unique perspective on problem-solving, while my 
                   cricket experience has taught me the value of collaboration and persistence in achieving goals.
                 </p>
