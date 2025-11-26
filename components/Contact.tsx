@@ -58,8 +58,8 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    value: "+94 77 123 4567",
-    href: "tel:+94771234567",
+    value: "+94 77 923 5776",
+    href: "tel:+94779235776",
     color: "text-green-400"
   },
   {
