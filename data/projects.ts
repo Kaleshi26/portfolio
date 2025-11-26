@@ -27,7 +27,7 @@ export const projects: Project[] = [
   {
     id: 'jobsea-app',
     title: 'JobSea – Job Search Mobile UI (Kotlin)',
-    description: 'A modern, UI/UX-focused Android app concept for job discovery, onboarding, and status tracking.',
+    description: 'A modern, UI/UX-focused Android app concept for job discovery, onboarding, and status tracking.build using Kotlin in Android Studio',
     longDescription: 'A complete, multi-screen Android application built purely for UI/UX demonstration using Kotlin in Android Studio. Features a full user flow: multi-step onboarding, registration/sign-in, a home screen with job browsing by category, dedicated search/filter, and status tracking screens. Focuses on Material Design principles, clean architecture (Activities/Views), and meticulous resource management.',
     image: '/projects/jobsea.png', // Suggest using a custom image path
     techStack: ['Kotlin', 'Android Studio', 'ConstraintLayout', 'Material Design', 'XML'],
@@ -51,7 +51,7 @@ export const projects: Project[] = [
   {
     id: 'smartspendy-kotlin',
     title: 'SmartSpendy – Android Finance Tracker (Kotlin)',
-    description: 'Offline-first expense tracker with budgeting, categories, and local backup/restore.',
+    description: 'Offline-first expense tracker with budgeting, categories, and local backup/restore.this is Native Android app built with Kotlin',
     longDescription: 'Native Android app built with Kotlin. Users manage income/expenses, set monthly budgets with notifications, categorize spending, and back up/restore data via JSON or text files using SharedPreferences and internal storage.',
     image: '/projects/finan.png',
     techStack: ['Kotlin', 'Android Studio', 'SharedPreferences', 'Notifications'],
@@ -76,7 +76,7 @@ export const projects: Project[] = [
   {
     id: 'smart-waste-management',
     title: 'Smart Waste Management System',
-    description: 'Full-stack platform with Spring Boot and React for PAYT billing, IoT data, and analytics.',
+    description: 'A multi-role municipal waste management system (Full-stack platform) with Spring Boot and React for PAYT billing, IoT data, and analytics.',
     longDescription: 'A multi-role municipal waste management system integrating IoT sensors, real-time monitoring, and a Pay-As-You-Throw billing model. Backend with Spring Boot (JWT security, SOLID principles) and PostgreSQL; frontend with React + Vite and Chart.js analytics; includes PayHere payment gateway and exportable reports.',
     image: '/projects/waste.png',
     techStack: ['Java 17', 'Spring Boot', 'Spring Security (JWT)', 'React', 'Vite', 'PostgreSQL', 'Chart.js'],
