@@ -259,10 +259,10 @@ export default function Certifications() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <span className="px-4 py-2 bg-blue-500/20 text-blue-400 rounded-full text-sm">
-                AWS Solutions Architect
+                AWS Solutions Architect – Associate
               </span>
               <span className="px-4 py-2 bg-green-500/20 text-green-400 rounded-full text-sm">
-                Google Cloud Professional
+                Google Cloud Certified Associate
               </span>
               <span className="px-4 py-2 bg-purple-500/20 text-purple-400 rounded-full text-sm">
                 Machine Learning Fundamentals
