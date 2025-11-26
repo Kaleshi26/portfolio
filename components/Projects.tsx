@@ -57,15 +57,15 @@ export default function Projects() {
           {[
             { id: 'all', label: 'All Projects', count: projects.length },
             { id: 'university', label: 'University', count: projects.filter(p => p.category === 'university').length },
-            { id: 'personal', label: 'Personal', count: projects.filter(p => p.category === 'personal').length },
-            { id: 'hackathon', label: 'Hackathon', count: projects.filter(p => p.category === 'hackathon').length }
+            { id: 'personal', label: 'Personal', count: projects.filter(p => p.category === 'personal').length }
+            // Removed hackathon filter since count is 0
           ].map((filter) => (
             <motion.button
               key={filter.id}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setActiveFilter(filter.id as any)}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
+              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 min-w-[160px] flex items-center justify-center ${
                 activeFilter === filter.id
                   ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-lg'
                   : 'glass text-gray-400 hover:text-white hover:bg-cyan-500/10'
