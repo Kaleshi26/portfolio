@@ -132,7 +132,7 @@ export default function Academics() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setSelectedYear(year)}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
+              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 min-w-[160px] flex items-center justify-center ${
                 selectedYear.year === year.year && selectedYear.semester === year.semester
                   ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-lg'
                   : 'glass text-gray-400 hover:text-white hover:bg-cyan-500/10'
