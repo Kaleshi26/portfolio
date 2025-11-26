@@ -72,7 +72,7 @@ export default function Navbar() {
           >
             <button
               onClick={() => handleNavClick("home")}
-              className="text-2xl font-bold gradient-text cursor-pointer"
+              className="text-4xl font-bold gradient-text cursor-pointer"
             >
               Kalana
             </button>
