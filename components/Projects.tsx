@@ -146,7 +146,7 @@ export default function Projects() {
                         e.stopPropagation();
                         window.open(project.githubUrl, '_blank');
                       }}
-                      className="flex items-center gap-2 px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors"
+                      className="flex items-center justify-center gap-2 px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors min-w-[120px]"
                     >
                       <Github className="w-4 h-4" />
                       Code
@@ -160,7 +160,7 @@ export default function Projects() {
                           e.stopPropagation();
                           window.open(project.liveUrl, '_blank');
                         }}
-                        className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg transition-all duration-300 hover:shadow-lg"
+                        className="flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg transition-all duration-300 hover:shadow-lg min-w-[120px]"
                       >
                         <ExternalLink className="w-4 h-4" />
                         Demo video
@@ -237,7 +237,7 @@ export default function Projects() {
                 )}
               </div>
               
-              <div className="flex gap-2">
+              <div className="flex gap-4">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -245,9 +245,9 @@ export default function Projects() {
                     e.stopPropagation();
                     window.open(project.githubUrl, '_blank');
                   }}
-                  className="flex items-center gap-1 px-3 py-1 bg-gray-700 hover:bg-gray-600 text-white rounded text-sm transition-colors"
+                  className="flex items-center justify-center gap-2 px-6 py-3 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors min-w-[160px]"
                 >
-                  <Github className="w-3 h-3" />
+                  <Github className="w-5 h-5" />
                   Code
                 </motion.button>
                 
@@ -259,10 +259,10 @@ export default function Projects() {
                       e.stopPropagation();
                       window.open(project.liveUrl, '_blank');
                     }}
-                    className="flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded text-sm transition-all duration-300"
+                    className="flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg transition-all duration-300 hover:shadow-lg min-w-[160px]"
                   >
-                    <ExternalLink className="w-3 h-3" />
-                    Demo
+                    <ExternalLink className="w-5 h-5" />
+                    Demo video
                   </motion.button>
                 )}
               </div>
@@ -354,7 +354,7 @@ export default function Projects() {
                     </div>
                   </div>
 
-                  {/* Action Buttons */}
+                 {/* Action Buttons */}
                   <div className="flex gap-4">
                     <motion.a
                       href={selectedProject.githubUrl}
@@ -362,7 +362,7 @@ export default function Projects() {
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="flex items-center gap-2 px-6 py-3 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors"
+                      className="flex items-center justify-center gap-2 px-6 py-3 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors min-w-[160px]"
                     >
                       <Github className="w-5 h-5" />
                       View Source Code
@@ -375,7 +375,7 @@ export default function Projects() {
                         rel="noopener noreferrer"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg transition-all duration-300 hover:shadow-lg"
+                        className="flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg transition-all duration-300 hover:shadow-lg min-w-[160px]"
                       >
                         <ExternalLink className="w-5 h-5" />
                         Live Demo
