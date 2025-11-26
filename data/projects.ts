@@ -120,5 +120,17 @@ export const projects: Project[] = [
     liveUrl: '', // To be filled if you deploy a live demo
     category: 'personal',
     featured: false
+  },
+  {
+    id: 'intellicontent-ai-saas',
+    title: 'IntelliContent – AI SaaS Content Platform (FastAPI/React)',
+    description: 'A premium, AI-powered content generation SaaS platform with multi-model support, RBAC, detailed analytics, and robust export features.',
+    longDescription: 'A full-stack, monorepo SaaS application for generating, managing, and sharing multi-format content (blogs, code, emails, translations). The backend is built with FastAPI (Python) and PostgreSQL, handling multi-model AI generation (OpenAI, Anthropic), rate limiting, caching, and admin functions (RBAC). The frontend uses React with MUI and Framer Motion to deliver a modern, accessible, and high-performance glassmorphism UI/UX, complete with analytics dashboards and various export options.',
+    image: '/projects/intellicontent.png', // Placeholder
+    techStack: ['FastAPI', 'React', 'MUI', 'Framer Motion', 'PostgreSQL', 'OpenAI API', 'Docker', 'Kubernetes'],
+    githubUrl: 'https://github.com/Kaleshi26/intellicontent.git',
+    liveUrl: '', // To be filled if you deploy a live demo
+    category: 'personal',
+    featured: false
   }
 ];
