@@ -13,7 +13,7 @@ export const achievements: Achievement[] = [
   // Hacktoberfest 2025
   {
     id: 'hacktoberfest-supercontributor',
-    title: 'Hacktoberfest 2025 - Supercontributor',
+    title: 'Hacktoberfest 2025 - Super contributor',
     description: 'Achieved Supercontributor level in Hacktoberfest 2025',
     image: 'https://assets.holopin.io/hf2025levels/lvl5-alien.webp',
     alt: 'Supercontributor',
