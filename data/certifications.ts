@@ -40,18 +40,19 @@ export const certifications: Certification[] = [
     description: 'Recognized for outstanding academic performance in Computer Science program',
     image: '/certifications/university-logo.svg',
     issueDate: '2024-12',
+    credentialUrl: 'https://mysliit-my.sharepoint.com/:i:/g/personal/it23142732_my_sliit_lk/EQZLrmJ7cFdBkk6a4qzCtQ0BNzRPojvSPXa9ewfggrm97Q?e=mi6fc3',
     category: 'academic'
   },
   {
-    id: 'aws-cloud-practitioner',
-    title: 'AWS Certified Cloud Practitioner',
-    issuer: 'Amazon Web Services',
-    description: 'Foundational understanding of AWS Cloud concepts and services',
-    image: '/certifications/aws-logo.svg',
-    issueDate: '2024-10',
-    credentialId: 'AWS-CLF-C01',
-    credentialUrl: 'https://www.credly.com/badges/example',
-    category: 'technical'
+    id: 'uom-web-design-beginners',
+    title: 'Web Design for Beginners',
+    issuer: 'University of Moratuwa - CODL',
+    description: 'Completed the online learning program covering foundational principles and practices of web design, conducted by the Department of Information Technology.',
+    image: '/certifications/uom-codl-logo.svg', // Placeholder for the CODL logo
+    issueDate: '2024-05', // Assumed date, you may need to adjust this
+    credentialId: '18HogtM1m4',
+    credentialUrl: 'https://mysliit-my.sharepoint.com/:b:/g/personal/it23142732_my_sliit_lk/EXxjb-OniRRCrofM1VKnEPABWv1wBJsPXTy2Su8j8UN-oA?e=1bnMmw',
+    category: 'technical'
   },
   {
     id: 'oci-foundations-associate',

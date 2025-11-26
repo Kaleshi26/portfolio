@@ -163,7 +163,7 @@ export default function Projects() {
                         className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg transition-all duration-300 hover:shadow-lg"
                       >
                         <ExternalLink className="w-4 h-4" />
-                        Live Demo
+                        Demo video
                       </motion.button>
                     )}
                   </div>

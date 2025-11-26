@@ -13,51 +13,52 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: 'ecommerce-platform',
-    title: 'E-Commerce Platform',
-    description: 'Full-stack e-commerce solution with modern UI and secure payment integration.',
-    longDescription: 'A comprehensive e-commerce platform built with Next.js, featuring user authentication, product catalog, shopping cart, payment processing with Stripe, and admin dashboard. Includes real-time inventory management and order tracking.',
-    image: '/projects/ecommerce.svg',
-    techStack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe', 'MongoDB', 'NextAuth.js'],
-    githubUrl: 'https://github.com/Kaleshi26/ecommerce-platform',
-    liveUrl: 'https://ecommerce-demo.vercel.app',
+    id: 'tourtales-java-servlet',
+    title: 'TourTales – Multi-Role Tour Guide System (Java EE)',
+    description: 'A full-stack web application for tour booking, vehicle assignment, and user management using Java Servlets and MySQL.',
+    longDescription: 'TourTales is a complete web application built on the Java Servlet and JSP standard, running on Apache Tomcat. It features a complex multi-role system (Customer, Tour Guide, Admin/Staff) with secure login and specific dashboards for each. Core functionality includes package and vehicle management, a full booking and payment flow, and an internal messaging system for real-time communication between all user roles. JDBC is used for database connectivity with MySQL.',
+    image: '/projects/tourtales.png', // Suggest using a custom image path
+    techStack: ['Java Servlets', 'JSP', 'JDBC', 'MySQL', 'Apache Tomcat', 'HTML/CSS'],
+    githubUrl: 'https://github.com/Kaleshi26/TourTales',
+    liveUrl: '', // No live demo URL provided in the README
+    category: 'university',
+    featured: false // Marking as true due to its large scope (full-stack, multi-role, booking system)
+  },
+  {
+    id: 'jobsea-app',
+    title: 'JobSea – Job Search Mobile UI (Kotlin)',
+    description: 'A modern, UI/UX-focused Android app concept for job discovery, onboarding, and status tracking.',
+    longDescription: 'A complete, multi-screen Android application built purely for UI/UX demonstration using Kotlin in Android Studio. Features a full user flow: multi-step onboarding, registration/sign-in, a home screen with job browsing by category, dedicated search/filter, and status tracking screens. Focuses on Material Design principles, clean architecture (Activities/Views), and meticulous resource management.',
+    image: '/projects/jobsea.png', // Suggest using a custom image path
+    techStack: ['Kotlin', 'Android Studio', 'ConstraintLayout', 'Material Design', 'XML'],
+    githubUrl: 'https://github.com/Kaleshi26/JobFinder_App.git',
+    liveUrl: 'https://vimeo.com/1138993591?fl=ip&fe=ec', // Linking to the Figma prototype as the 'Live Demo'
+    category: 'university',
+    featured: false // Marking as false since you have four featured already
+  },
+  {
+    id: 'belleza-fashion-store',
+    title: 'Belleza – Server-Rendered PHP E-commerce',
+    description: 'Full-stack fashion store with an admin panel, product management, and simple cart/checkout logic.',
+    longDescription: 'A complete e-commerce platform built using plain PHP and MySQL (mysqli). The architecture utilizes server-side rendering with shared header/footer components and PHP sessions for authentication and cart state. Features include multi-page public browsing, user account management (using md5 hashing for passwords), a full cart/checkout flow, and a secure admin panel for managing products, viewing orders, and displaying simple sales charts via Chart.js.',
+    image: '/projects/belleza.png', // Suggest using a custom image path
+    techStack: ['PHP', 'MySQL (mysqli)', 'HTML', 'CSS', 'JavaScript', 'Chart.js'],
+    githubUrl: 'https://github.com/Kaleshi26/Belleza-Fashion-Store',
+    liveUrl: '', // No live demo URL provided in the audit or README
+    category: 'university',
+    featured: false // Marking as false to maintain the existing four featured projects
+  },
+  {
+    id: 'smartspendy-kotlin',
+    title: 'SmartSpendy – Android Finance Tracker (Kotlin)',
+    description: 'Offline-first expense tracker with budgeting, categories, and local backup/restore.',
+    longDescription: 'Native Android app built with Kotlin. Users manage income/expenses, set monthly budgets with notifications, categorize spending, and back up/restore data via JSON or text files using SharedPreferences and internal storage.',
+    image: '/projects/finan.png',
+    techStack: ['Kotlin', 'Android Studio', 'SharedPreferences', 'Notifications'],
+    githubUrl: 'https://github.com/Kaleshi26/SmartSpendy_App',
+    liveUrl: 'https://vimeo.com/1138999936?fl=ip&fe=ec',
     category: 'university',
     featured: true
-  },
-  {
-    id: 'task-manager',
-    title: 'Task Management App',
-    description: 'Collaborative task management tool with real-time updates and team collaboration features.',
-    longDescription: 'A modern task management application with drag-and-drop functionality, real-time collaboration, file attachments, and progress tracking. Built with React and Firebase for real-time synchronization.',
-    image: '/projects/taskmanager.svg',
-    techStack: ['React', 'Firebase', 'Material-UI', 'Redux Toolkit', 'React DnD'],
-    githubUrl: 'https://github.com/Kaleshi26/task-manager',
-    liveUrl: 'https://taskmanager-demo.netlify.app',
-    category: 'personal',
-    featured: true
-  },
-  {
-    id: 'weather-app',
-    title: 'Weather Dashboard',
-    description: 'Beautiful weather application with location-based forecasts and interactive maps.',
-    longDescription: 'A responsive weather dashboard that provides current conditions, 7-day forecasts, and interactive weather maps. Features location-based services and beautiful data visualizations.',
-    image: '/projects/weather.svg',
-    techStack: ['Vue.js', 'OpenWeather API', 'Chart.js', 'PWA'],
-    githubUrl: 'https://github.com/Kaleshi26/weather-dashboard',
-    liveUrl: 'https://weather-demo.vercel.app',
-    category: 'personal',
-    featured: false
-  },
-  {
-    id: 'library-system',
-    title: 'Library Management System',
-    description: 'Complete library management solution for educational institutions.',
-    longDescription: 'A comprehensive library management system with book cataloging, member management, borrowing system, and automated notifications. Built for university coursework with focus on database design and system architecture.',
-    image: '/projects/library.svg',
-    techStack: ['Java', 'Spring Boot', 'MySQL', 'Bootstrap', 'JSP'],
-    githubUrl: 'https://github.com/Kaleshi26/library-management',
-    category: 'university',
-    featured: false
   }
   ,
   {
@@ -68,7 +69,7 @@ export const projects: Project[] = [
     image: '/projects/ecoC.png',
     techStack: ['React Native', 'Expo', 'TypeScript', 'Firebase Auth', 'Firestore', 'Expo Router', 'NativeWind'],
     githubUrl: 'https://github.com/Kaleshi26/EcoConnect-App',
-    liveUrl: '',
+    liveUrl: 'https://vimeo.com/1139806894?fl=ip&fe=ec',
     category: 'university',
     featured: true
   },
@@ -80,7 +81,7 @@ export const projects: Project[] = [
     image: '/projects/waste.png',
     techStack: ['Java 17', 'Spring Boot', 'Spring Security (JWT)', 'React', 'Vite', 'PostgreSQL', 'Chart.js'],
     githubUrl: 'https://github.com/Kaleshi26/Smart-Waste-Management',
-    liveUrl: '',
+    liveUrl: 'https://vimeo.com/1139998121?fl=ip&fe=ec',
     category: 'university',
     featured: true
   },
@@ -92,20 +93,8 @@ export const projects: Project[] = [
     image: '/projects/campE.png',
     techStack: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Tailwind CSS'],
     githubUrl: 'https://github.com/Kaleshi26/Camping-Gear-Rental',
-    liveUrl: '',
+    liveUrl: 'https://vimeo.com/1139742593?fl=ip&fe=ec',
     category: 'university',
     featured: true
-  },
-  {
-    id: 'smartspendy-kotlin',
-    title: 'SmartSpendy – Android Finance Tracker (Kotlin)',
-    description: 'Offline-first expense tracker with budgeting, categories, and local backup/restore.',
-    longDescription: 'Native Android app built with Kotlin. Users manage income/expenses, set monthly budgets with notifications, categorize spending, and back up/restore data via JSON or text files using SharedPreferences and internal storage.',
-    image: '/projects/finan.png',
-    techStack: ['Kotlin', 'Android Studio', 'SharedPreferences', 'Notifications'],
-    githubUrl: 'https://github.com/Kaleshi26/SmartSpendy_App',
-    liveUrl: '',
-    category: 'university',
-    featured: false
   }
 ];
