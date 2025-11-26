@@ -96,5 +96,29 @@ export const projects: Project[] = [
     liveUrl: 'https://vimeo.com/1139742593?fl=ip&fe=ec',
     category: 'university',
     featured: true
+  },
+  {
+    id: 'on-demand-skills-app-mern-docker',
+    title: 'Service Marketplace (MERN + Docker)',
+    description: 'A full-featured service marketplace connecting customers and providers with real-time chat, payments, and role-based management.',
+    longDescription: 'A robust, containerized marketplace platform built on the MERN stack (MongoDB, Express, React, Node.js). It supports a multi-role system (Customer, Provider, Admin) with distinct dashboards. Key features include real-time messaging using Socket.IO, secure payment integration via Stripe, comprehensive file uploads, and a detailed review/rating system. The entire application is fully containerized using Docker and Docker Compose for streamlined development and production deployment.',
+    image: '/projects/skills-app.png', // Placeholder (as requested)
+    techStack: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Socket.IO', 'Stripe', 'Tailwind CSS', 'Docker'],
+    githubUrl: 'https://github.com/Kaleshi26/on-demand-skills-app.git',
+    liveUrl: '', // To be filled if you deploy a live demo
+    category: 'personal',
+    featured: false
+  },
+  {
+    id: 'microsaas-shop-microservices',
+    title: 'MicroSaaS Shop (Next.js/NestJS Microservices)',
+    description: 'A production-grade e-commerce platform demonstrating a full microservices architecture, event streaming, and comprehensive observability (Kafka, OpenSearch, Prometheus).',
+    longDescription: 'A cutting-edge, full-stack e-commerce solution built with Next.js 14 (Frontend) and NestJS (Backend). It implements a robust microservices architecture using gRPC for inter-service communication and Kafka for real-time event streaming. Advanced features include OpenSearch for lightning-fast full-text search, Stripe for payments, and a professional observability stack featuring Prometheus for metrics and Grafana for dashboard visualization. The project emphasizes modern patterns like Feature Flags (Unleash) and Edge Caching (Cloudflare Workers).',
+    image: '/projects/microsaas-shop.png', // Placeholder
+    techStack: ['Next.js 14', 'NestJS', 'PostgreSQL', 'Kafka', 'OpenSearch', 'Prometheus', 'Grafana', 'Docker'],
+    githubUrl: 'https://github.com/Kaleshi26/microsaas-shop.git',
+    liveUrl: '', // To be filled if you deploy a live demo
+    category: 'personal',
+    featured: false
   }
 ];
