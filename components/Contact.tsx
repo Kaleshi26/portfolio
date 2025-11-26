@@ -355,35 +355,35 @@ export default function Contact() {
             className="text-center"
           >
             <div className="glass p-12 rounded-2xl max-w-4xl">
-            <h3 className="text-3xl font-bold mb-6 gradient-text">Ready to Start Something Amazing?</h3>
-            <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-              Whether you have a project in mind, want to collaborate, or just want to chat about technology, 
-              I'd love to hear from you. Let's create something incredible together!
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.a
-                href="mailto:kalanaeshan07@gmail.com"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300"
-              >
-                <Mail className="w-5 h-5" />
-                Email Me Directly
-              </motion.a>
-              <motion.a
-                href="https://github.com/Kaleshi26"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="flex items-center gap-2 px-8 py-4 glass border border-cyan-500/30 text-cyan-400 rounded-lg font-semibold hover:bg-cyan-500/10 transition-all duration-300"
-              >
-                <Github className="w-5 h-5" />
-                View My Work
-              </motion.a>
+              <h3 className="text-3xl font-bold mb-6 gradient-text">Ready to Start Something Amazing?</h3>
+              <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
+                Whether you have a project in mind, want to collaborate, or just want to chat about technology, 
+                I'd love to hear from you. Let's create something incredible together!
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <motion.a
+                  href="mailto:kalanaeshan07@gmail.com"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 min-w-[160px]"
+                >
+                  <Mail className="w-5 h-5" />
+                  Email Me Directly
+                </motion.a>
+                <motion.a
+                  href="https://github.com/Kaleshi26"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="flex items-center justify-center gap-2 px-8 py-4 glass border border-cyan-500/30 text-cyan-400 rounded-lg font-semibold hover:bg-cyan-500/10 transition-all duration-300 min-w-[160px]"
+                >
+                  <Github className="w-5 h-5" />
+                  View My Work
+                </motion.a>
+              </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
         </div>
       </div>
     </section>
