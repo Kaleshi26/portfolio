@@ -47,7 +47,7 @@ export const certifications: Certification[] = [
     id: 'uom-web-design-beginners',
     title: 'Web Design for Beginners',
     issuer: 'University of Moratuwa - CODL',
-    description: 'Completed the online learning program covering foundational principles and practices of web design, conducted by the Department of Information Technology.',
+    description: 'Completed the online learning program covering foundational principles and practices of web design, conducted by the Department of IT,gaining essential skills in creating user-friendly and responsive web interfaces.',
     image: '/certifications/uom-codl-logo.svg', // Placeholder for the CODL logo
     issueDate: '2024-05', // Assumed date, you may need to adjust this
     credentialId: '18HogtM1m4',
