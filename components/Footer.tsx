@@ -77,7 +77,7 @@ export default function Footer() {
           >
             <h3 className="text-2xl font-bold gradient-text mb-4">Kalana Eshan</h3>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Full Stack Developer & CS Undergraduate passionate about creating 
+              Full Stack Developer & SE Undergraduate passionate about creating 
               innovative web solutions and contributing to the tech community.
             </p>
             
@@ -181,7 +181,7 @@ export default function Footer() {
               </div>
               <div>
                 <p className="text-gray-400 text-sm mb-1">Location</p>
-                <p className="text-white">Peradeniya, Sri Lanka</p>
+                <p className="text-white">Malabe, Sri Lanka</p>
               </div>
               <div>
                 <p className="text-gray-400 text-sm mb-1">Status</p>

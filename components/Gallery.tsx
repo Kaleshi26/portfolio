@@ -69,7 +69,7 @@ export default function Gallery() {
             <span className="gradient-text">Cricket Gallery</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed text-center">
-            Memories from my cricket journey with the Kandy District Team in 2017. 
+            Memories from my cricket journey with the school Team. 
             These moments shaped my character and taught me valuable lessons about teamwork, 
             discipline, and perseverance that I carry into my programming career.
           </p>

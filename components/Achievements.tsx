@@ -22,6 +22,18 @@ export default function Achievements() {
   const hacktoberfestBadges = achievements.filter(achievement => achievement.category === 'hacktoberfest');
   const otherAchievements = achievements.filter(achievement => achievement.category !== 'hacktoberfest');
 
+  // Links corresponding to the badge order (0-7)
+  const badgeLinks = [
+    "https://www.holopin.io/hacktoberfest2025/userbadge/cmgq6fatt002rlb04b63skkc1", // Super contributor
+    "https://www.holopin.io/userbadge/cmgq6fpfm002tlb04mo0sxnf3",                 // Tree Planted
+    "https://www.holopin.io/hacktoberfest2025/userbadge/cmgphjbul000xl404yfdfqvmv", // Level 4
+    "https://www.holopin.io/hacktoberfest2025/userbadge/cmgphj11w00dvl6043jz9cb20", // Level 3
+    "https://www.holopin.io/hacktoberfest2025/userbadge/cmgphileq0018l4046wdny7o9", // Level 2
+    "https://www.holopin.io/hacktoberfest2025/userbadge/cmgphi1w100iml804n3yaplid", // Level 1
+    "https://www.holopin.io/hacktoberfest2025/userbadge/cmfpgn2st000djo04prnznyvo", // Level 0
+    "https://www.holopin.io/userbadge/cmg0cffd50018jp04gsspk031"                  // Early Bird
+  ];
+
   return (
     <section id="achievements" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -78,22 +90,30 @@ export default function Achievements() {
                 whileHover={{ scale: 1.1, y: -5 }}
                 className="group cursor-pointer min-w-0"
               >
-                <div className="glass p-4 rounded-xl hover:glow-cyan transition-all duration-300 text-center h-full">
-                  <div className="relative w-24 h-24 mx-auto mb-3">
-                    <Image
-                      src={badge.image}
-                      alt={badge.alt}
-                      fill
-                      className="object-contain group-hover:scale-110 transition-transform duration-300"
-                    />
+                {/* Wrapped in Anchor tag for linking */}
+                <a 
+                  href={badgeLinks[index]} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="block h-full"
+                >
+                  <div className="glass p-4 rounded-xl hover:glow-cyan transition-all duration-300 text-center h-full">
+                    <div className="relative w-24 h-24 mx-auto mb-3">
+                      <Image
+                        src={badge.image}
+                        alt={badge.alt}
+                        fill
+                        className="object-contain group-hover:scale-110 transition-transform duration-300"
+                      />
+                    </div>
+                    <h4 className="text-sm font-semibold text-white group-hover:text-cyan-400 transition-colors">
+                      {badge.title}
+                    </h4>
+                    <p className="text-xs text-gray-400 mt-1">
+                      {badge.year}
+                    </p>
                   </div>
-                  <h4 className="text-sm font-semibold text-white group-hover:text-cyan-400 transition-colors">
-                    {badge.title}
-                  </h4>
-                  <p className="text-xs text-gray-400 mt-1">
-                    {badge.year}
-                  </p>
-                </div>
+                </a>
               </motion.div>
             ))}
           </div>

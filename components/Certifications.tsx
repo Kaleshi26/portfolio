@@ -60,7 +60,7 @@ export default function Certifications() {
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed text-center">
             Professional certifications and academic achievements that validate my expertise 
-            and commitment to continuous learning in technology and computer science.
+            and commitment to continuous learning in technology and software engineering.
           </p>
         </motion.div>
 

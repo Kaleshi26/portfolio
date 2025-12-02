@@ -15,7 +15,7 @@ const timelineData = [
     bgColor: "bg-yellow-500/10"
   },
   {
-    year: "2020",
+    year: "2022",
     title: "A/L Physical Science Stream",
     description: "Completed Advanced Level examinations in Physical Science stream, building a strong foundation in mathematics and physics.",
     icon: BookOpen,

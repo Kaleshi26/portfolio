@@ -65,8 +65,8 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Location",
-    value: "Peradeniya, Sri Lanka",
-    href: "https://maps.google.com/?q=Peradeniya,Sri+Lanka",
+    value: "Malabe, Sri Lanka",
+    href: "https://maps.google.com/?q=Malabe,Sri+Lanka",
     color: "text-blue-400"
   }
 ];
